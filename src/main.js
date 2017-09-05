@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Navigation from './Navigation.vue'
-import BBC from './BBC.vue'
+import TIME from './TIME.vue'
+import CNN from './CNN.vue'
 import Footer from './Footer.vue'
 
 new Vue({
@@ -8,7 +9,8 @@ new Vue({
 
     components:{
         'kt-nav' : Navigation,
-        'kt-bbc' : BBC,
+        'kt-time' : TIME,
+        'kt-cnn' : CNN,
         'kt-footer' : Footer
     }
 })

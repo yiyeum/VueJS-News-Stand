@@ -2,13 +2,13 @@
     <div>
         <nav class="py-3 navbar navbar-expand-lg fixed-top row">
             <div class="col">
-                <a class="nav-link" href="#">BBC</a>
+                <a class="nav-link" href="#">TIME</a>
             </div>
             <div class="col">
                 <a class="nav-link" href="#">CNN</a>
             </div>
             <div class="col">
-                <a class="nav-link" href="#">Time</a>
+                <a class="nav-link" href="#">BBC</a>
             </div>
             <div class="col">
                 <a class="nav-link" href="#">Google News</a>
