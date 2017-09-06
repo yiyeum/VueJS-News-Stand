@@ -25,9 +25,9 @@
         },
         created:function(){
             let vm = this;
-            Axios.get('https://newsapi.org/v1/articles?source=time&sortBy=latest&apiKey=245980c58e3a478eac2c71f8603dd229')
+            Axios.get('https://newsapi.org/v1/articles?source=cnn&sortBy=top&apiKey=245980c58e3a478eac2c71f8603dd229')
                 .then(function(response){
-                  vm.articles = response.data.articles;
+                    vm.articles = response.data.articles;
                 })
         }
     }
@@ -35,21 +35,16 @@
 
 <style>
 
-
     img.card-img-top{
         margin-bottom: 5px;
     }
 
     .row .card{
-        width: 31%;
-        background: #fff;
-        padding: 1%;
-        margin-bottom: 30px;
+        padding: 0.5%;
+        text-align: center;
     }
 
-    .row .card:nth-of-type(3n+2){
-        margin-left: 1%;
-        margin-right: 1%;
+    .card-block a{
+        margin: 0 auto;
     }
-
 </style>

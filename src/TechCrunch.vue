@@ -25,9 +25,9 @@
         },
         created:function(){
             let vm = this;
-            Axios.get('https://newsapi.org/v1/articles?source=time&sortBy=latest&apiKey=245980c58e3a478eac2c71f8603dd229')
+            Axios.get('https://newsapi.org/v1/articles?source=techcrunch&sortBy=top&apiKey=245980c58e3a478eac2c71f8603dd229')
                 .then(function(response){
-                  vm.articles = response.data.articles;
+                    vm.articles = response.data.articles;
                 })
         }
     }
@@ -35,9 +35,14 @@
 
 <style>
 
-
     img.card-img-top{
         margin-bottom: 5px;
+    }
+
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
     }
 
     .row .card{
@@ -51,5 +56,4 @@
         margin-left: 1%;
         margin-right: 1%;
     }
-
 </style>
