@@ -1,16 +1,16 @@
 import Vue from 'vue'
 import Navigation from './Navigation.vue'
-import TIME from './TIME.vue'
-import CNN from './CNN.vue'
 import Footer from './Footer.vue'
+import Router from 'vue-router'
+import {routes} from './routers'
 
+Vue.use(Router);
+const router = new Router({routes});
 new Vue({
   el: '#app',
-
+    router,
     components:{
         'kt-nav' : Navigation,
-        'kt-time' : TIME,
-        'kt-cnn' : CNN,
         'kt-footer' : Footer
     }
 })
