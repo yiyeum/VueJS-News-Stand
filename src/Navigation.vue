@@ -1,18 +1,11 @@
 <template>
     <div>
-        <nav class="py-3 navbar navbar-expand-lg fixed-top row">
-            <div class="col">
-                <a class="nav-link" href="#">TIME</a>
-            </div>
-            <div class="col">
-                <a class="nav-link" href="#">CNN</a>
-            </div>
-            <div class="col">
-                <a class="nav-link" href="#">BBC</a>
-            </div>
-            <div class="col">
-                <a class="nav-link" href="#">Google News</a>
-            </div>
+        <nav class="navbar navbar-expand-lg fixed-top row">
+
+                    <router-link tag="li" class="col" class-active="active" to="/" exact>TIME</router-link>
+                    <router-link tag="li" class="col" class-active="active" to="/CNN" exact>CNN</router-link>
+                    <router-link tag="li" class="col" class-active="active" to="/TechCrunch" exact>TechCrunch</router-link>
+                    <router-link tag="li" class="col" class-active="active" to="/BBCSport" exact>BBC Sport</router-link>
         </nav>
     </div>
 </template>
@@ -22,18 +15,30 @@
 </script>
 
 <style>
-    nav {
+    nav.navbar {
         background-color: lightsalmon;
+        padding: 0;
     }
 
-    nav a {
+    nav li {
         color: #fff;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 20px;
+    }
+
+    nav li{
+        list-style-type: none;
         text-align: center;
     }
 
-    nav a:hover{
-        color: darkgray;
+    nav li:hover,
+    nav li:active{
+        background-color: indianred;
+        cursor: pointer;
+    }
+
+    nav li.col a:hover{
+        color: #fff;
+        text-decoration: none;
     }
 </style>
