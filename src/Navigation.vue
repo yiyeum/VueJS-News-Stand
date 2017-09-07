@@ -32,7 +32,8 @@
     }
 
     nav li:hover,
-    nav li:active{
+    nav li.router-link-active,
+    nav li.router-link-exact-active{
         background-color: indianred;
         cursor: pointer;
     }
